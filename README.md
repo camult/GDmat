@@ -6,7 +6,7 @@
 
 To install this package, use devtools:
 
-devtools::install_github("camult/easyGWAS")
+devtools::install_github("camult/GDmat")
 
 
 ## Description
