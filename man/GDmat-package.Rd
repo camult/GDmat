@@ -9,7 +9,7 @@ GRM(X, smallValue)
 DRM(X)
 }
 \arguments{
-\item{X}{(numeric, \eqn{n}{m}) matrix of genotypes with a number of rows identical to the number of genotyped individuals (n) and a number of columns identical to the number of SNPs (m). Values in the matrix are 0 and 2 for homozygous and 1 for heterozygous.}
+\item{X}{(numeric, \eqn{n}{m}) matrix of genotypes with a number of rows identical to the number of SNPs (m) and a number of columns identical to the number of genotyped individuals (n). Values in the matrix are 0 and 2 for homozygous and 1 for heterozygous.}
 
 \item{smallValue}{add a small value to the diagonal to ensure the matrix will always be positive definite.}
 }
