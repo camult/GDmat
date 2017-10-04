@@ -1,4 +1,13 @@
-# `GDmat-package`: Additive and Dominance Relationship Matrices
+# `GDmat`: Additive and Dominance Relationship Matrices
+
+
+
+# How to Install
+
+To install this package, use devtools:
+
+devtools::install_github("camult/GDmat")
+
 
 ## Description
 
