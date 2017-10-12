@@ -12,6 +12,7 @@
 #' 
 #' @return Additive relationship matrix.
 #' 
+#' 
 #' @examples
 #' ## Not to run ##
 #' 
