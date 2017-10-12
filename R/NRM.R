@@ -19,7 +19,7 @@
 #' 
 #' @export NRM
 NRM <- function(Pedig){
-  x <- ped
+  x <- Pedig
   n <- nrow(x)
   ret <- matrix(0, n, n)
   diag(ret) <- 1

@@ -1,7 +1,5 @@
 #include "RcppArmadillo.h"
 
-using namespace Rcpp;
-
 // [[Rcpp::depends(RcppArmadillo)]]
 
 // Calculates the realized dominance relationship matrix
