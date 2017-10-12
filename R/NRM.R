@@ -12,11 +12,6 @@
 #' 
 #' @return Additive relationship matrix.
 #' 
-#' @references Hyun Min Kang, Noah A. Zaitlen, Claire M. Wade, Andrew Kirby, David Heckerman, Mark J. Daly and Eleazar Eskin, 2008. Efficient control of population structure in model organism association mapping. Genetics 178:1709-1723. doi:10.1534/genetics.107.080101.
-#' 
-#' @references Gianola D, Schon C-C, 2016. Cross-Validation Without Doing Cross-Validation in Genome-Enabled Prediction. G3: Genes|Genomes|Genetics. 6(10):3107-3128. doi:10.1534/g3.116.033381.
-#' 
-#' 
 #' @examples
 #' ## Not to run ##
 #' 
