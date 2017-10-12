@@ -47,3 +47,41 @@ Argument      |Description
  ## End(Not run)
  ``` 
 
+# `NRM`: Calculates the Pedigree-based Additive Relationship Matrix
+
+## Description
+
+
+ Calculates the the Pedigree-based Additive Relationship Matrix. This is twice the pedigree based kinship matrix.
+
+
+## Usage
+
+```r
+NRM(Pedig)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+```Pedig```     |     Data frame containing the Pedigree. The data frame has columns (1) Individual, (2) Sire, (3) Dam. Missing parents are coded as NA.
+
+## Value
+
+
+ Additive relationship matrix.
+
+
+## Examples
+
+```r 
+ ## Not to run ##
+ 
+ ## NRM(Pedig)
+ 
+ ## End(Not run)
+ 
+ ``` 
+
