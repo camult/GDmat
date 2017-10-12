@@ -29,44 +29,14 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// rcpp_makeA
-Rcpp::NumericMatrix rcpp_makeA(const arma::ivec& numSire, const arma::ivec& numDam, const arma::mat& AFounder, const arma::ivec& numFounder, const Rcpp::CharacterVector IndivName);
-RcppExport SEXP _GDmat_rcpp_makeA(SEXP numSireSEXP, SEXP numDamSEXP, SEXP AFounderSEXP, SEXP numFounderSEXP, SEXP IndivNameSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const arma::ivec& >::type numSire(numSireSEXP);
-    Rcpp::traits::input_parameter< const arma::ivec& >::type numDam(numDamSEXP);
-    Rcpp::traits::input_parameter< const arma::mat& >::type AFounder(AFounderSEXP);
-    Rcpp::traits::input_parameter< const arma::ivec& >::type numFounder(numFounderSEXP);
-    Rcpp::traits::input_parameter< const Rcpp::CharacterVector >::type IndivName(IndivNameSEXP);
-    rcpp_result_gen = Rcpp::wrap(rcpp_makeA(numSire, numDam, AFounder, numFounder, IndivName));
-    return rcpp_result_gen;
-END_RCPP
-}
-// rcpp_makeA_lowMem
-Rcpp::NumericMatrix rcpp_makeA_lowMem(const arma::ivec& numSire, const arma::ivec& numDam, const arma::mat& AFounder, const arma::ivec& numFounder, const Rcpp::CharacterVector IndivName, const arma::ivec& numKeep, const arma::ivec& ainKeep, const arma::ivec& anOff);
-RcppExport SEXP _GDmat_rcpp_makeA_lowMem(SEXP numSireSEXP, SEXP numDamSEXP, SEXP AFounderSEXP, SEXP numFounderSEXP, SEXP IndivNameSEXP, SEXP numKeepSEXP, SEXP ainKeepSEXP, SEXP anOffSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const arma::ivec& >::type numSire(numSireSEXP);
-    Rcpp::traits::input_parameter< const arma::ivec& >::type numDam(numDamSEXP);
-    Rcpp::traits::input_parameter< const arma::mat& >::type AFounder(AFounderSEXP);
-    Rcpp::traits::input_parameter< const arma::ivec& >::type numFounder(numFounderSEXP);
-    Rcpp::traits::input_parameter< const Rcpp::CharacterVector >::type IndivName(IndivNameSEXP);
-    Rcpp::traits::input_parameter< const arma::ivec& >::type numKeep(numKeepSEXP);
-    Rcpp::traits::input_parameter< const arma::ivec& >::type ainKeep(ainKeepSEXP);
-    Rcpp::traits::input_parameter< const arma::ivec& >::type anOff(anOffSEXP);
-    rcpp_result_gen = Rcpp::wrap(rcpp_makeA_lowMem(numSire, numDam, AFounder, numFounder, IndivName, numKeep, ainKeep, anOff));
-    return rcpp_result_gen;
-END_RCPP
-}
+
+RcppExport SEXP _GDmat_rcpp_makeA(SEXP, SEXP, SEXP, SEXP, SEXP);
+RcppExport SEXP _GDmat_rcpp_makeA_lowMem(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 
 static const R_CallMethodDef CallEntries[] = {
     {"_GDmat_DRM", (DL_FUNC) &_GDmat_DRM, 1},
     {"_GDmat_GRM", (DL_FUNC) &_GDmat_GRM, 2},
-    {"_GDmat_rcpp_makeA", (DL_FUNC) &_GDmat_rcpp_makeA, 5},
+    {"_GDmat_rcpp_makeA",        (DL_FUNC) &_GDmat_rcpp_makeA,        5},
     {"_GDmat_rcpp_makeA_lowMem", (DL_FUNC) &_GDmat_rcpp_makeA_lowMem, 8},
     {NULL, NULL, 0}
 };
