@@ -47,3 +47,52 @@ Argument      |Description
  ## End(Not run)
  ``` 
 
+# `NRM`: Calculates the Pedigree-based Additive Relationship Matrix
+
+## Description
+
+
+ Calculates the the Pedigree-based Additive Relationship Matrix. This is twice the pedigree based kinship matrix.
+
+
+## Usage
+
+```r
+NRM(Pedig, keep.only = NULL, keep = keep.only, AFounder = NULL)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+```Pedig```     |     Data frame containing the Pedigree. The data frame has columns (1) Individual, (2) Sire, (3) Dam. Missing parents are coded as NA. Both parents must either be missing or present.
+```keep.only```     |     If `keep.only` is provided then kinships are computed only for these animals.
+```keep```     |     If `keep` is provided then kinships are computed only for these animals and their ancestors.
+```AFounder```     |     Additive relationship matrix of the founders. The row names are the ids of the founders. By default, founders are assumed to be unrelated. Founders not included in this matrix are also assumed to be unrelated.
+
+## Value
+
+
+ Additive relationship matrix.
+
+
+## References
+
+
+ Hyun Min Kang, Noah A. Zaitlen, Claire M. Wade, Andrew Kirby, David Heckerman, Mark J. Daly and Eleazar Eskin, 2008. Efficient control of population structure in model organism association mapping. Genetics 178:1709-1723. doi:10.1534/genetics.107.080101.
+ 
+ Gianola D, Schon C-C, 2016. Cross-Validation Without Doing Cross-Validation in Genome-Enabled Prediction. G3: Genes|Genomes|Genetics. 6(10):3107-3128. doi:10.1534/g3.116.033381.
+
+
+## Examples
+
+```r 
+ ## Not to run ##
+ 
+ ## NRM(Pedigree, keep.only=NULL, keep=keep.only, AFounder=NULL)
+ 
+ ## End(Not run)
+ 
+ ``` 
+

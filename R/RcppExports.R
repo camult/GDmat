@@ -9,3 +9,11 @@ GRM <- function(X, smallValue) {
     .Call('_GDmat_GRM', PACKAGE = 'GDmat', X, smallValue)
 }
 
+rcpp_makeA <- function(numSire, numDam, AFounder, numFounder, IndivName) {
+    .Call('_GDmat_rcpp_makeA', PACKAGE = 'GDmat', numSire, numDam, AFounder, numFounder, IndivName)
+}
+
+rcpp_makeA_lowMem <- function(numSire, numDam, AFounder, numFounder, IndivName, numKeep, ainKeep, anOff) {
+    .Call('_GDmat_rcpp_makeA_lowMem', PACKAGE = 'GDmat', numSire, numDam, AFounder, numFounder, IndivName, numKeep, ainKeep, anOff)
+}
+
