@@ -30,14 +30,9 @@ BEGIN_RCPP
 END_RCPP
 }
 
-RcppExport SEXP _GDmat_rcpp_makeA(SEXP, SEXP, SEXP, SEXP, SEXP);
-RcppExport SEXP _GDmat_rcpp_makeA_lowMem(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
-
 static const R_CallMethodDef CallEntries[] = {
     {"_GDmat_DRM", (DL_FUNC) &_GDmat_DRM, 1},
     {"_GDmat_GRM", (DL_FUNC) &_GDmat_GRM, 2},
-    {"_GDmat_rcpp_makeA",        (DL_FUNC) &_GDmat_rcpp_makeA,        5},
-    {"_GDmat_rcpp_makeA_lowMem", (DL_FUNC) &_GDmat_rcpp_makeA_lowMem, 8},
     {NULL, NULL, 0}
 };
 
